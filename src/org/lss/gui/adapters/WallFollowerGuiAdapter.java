@@ -59,21 +59,13 @@ public class WallFollowerGuiAdapter extends JPanel implements Runnable {
 	public void paint(Graphics g) {
 		super.paint(g);
 		
-		//System.out.println("Çizim başladı");
 		g.setColor(Color.orange);
 		
 		g.fillRect(x, y, robotSize, robotSize);
-		
-		//System.out.println("Çizim başarılı");
 		
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(
 				RenderingHints.KEY_ANTIALIASING,
 				RenderingHints.VALUE_ANTIALIAS_ON);
-		
-		//Graphics2D g2d = (Graphics2D) g;
-		//g2d.setRenderingHint(
-	    //        RenderingHints.KEY_ANTIALIASING,
-	    //        RenderingHints.VALUE_ANTIALIAS_ON);
 	}
 }
