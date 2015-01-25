@@ -1,6 +1,10 @@
 package org.lss.robot;
 
-public interface Robot {
-
-	public void startSolving();
+public class Robot<Algorithm> {
+	Algorithm deadendFilling;
+	
+	public Robot() {
+		
+	}
+	
 }

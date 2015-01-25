@@ -6,7 +6,7 @@ import org.lss.robot.BasicMovements;
 import org.lss.robot.Robot;
 import org.lss.robot.Direction;
 
-public class WallFollower extends BasicMovements implements Robot {
+public class WallFollower extends BasicMovements {
 
 	private Maze maze;
 	
