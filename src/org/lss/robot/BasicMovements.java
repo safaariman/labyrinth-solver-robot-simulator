@@ -29,6 +29,17 @@ public class BasicMovements {
 			currentDirection = Direction.EAST;
 	}
 	
+	public void turnBack() {
+		if (currentDirection == Direction.EAST)
+			currentDirection = Direction.WEST;
+		else if (currentDirection == Direction.SOUTH)
+			currentDirection = Direction.NORTH;
+		else if (currentDirection == Direction.WEST)
+			currentDirection = Direction.EAST;
+		else if (currentDirection == Direction.NORTH)
+			currentDirection = Direction.SOUTH;
+	}
+	
 	public void goForward() {
 		if (currentDirection == Direction.EAST) {
 			(currentPoint.y)++;
