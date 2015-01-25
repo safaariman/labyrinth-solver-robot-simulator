@@ -9,7 +9,7 @@ import org.lss.robot.Direction;
 public class WallFollower extends BasicMovements implements Robot {
 
 	private Maze maze;
-	private Point currentPoint;
+	
 
 	public WallFollower(Maze m) {
 		this.maze = m;
@@ -17,23 +17,7 @@ public class WallFollower extends BasicMovements implements Robot {
 		currentDirection = Direction.EAST;
 	}
 
-	public void goForward() {
-		if (currentDirection == Direction.EAST) {
-			(currentPoint.y)++;
-		}
-
-		else if (currentDirection == Direction.NORTH) {
-			(currentPoint.x)--;
-		}
-
-		else if (currentDirection == Direction.WEST) {
-			(currentPoint.y)--;
-		}
-
-		else if (currentDirection == Direction.SOUTH) {
-			(currentPoint.x)++;
-		}
-	}
+	
 
 	public Maze getMaze() {
 		return maze;
