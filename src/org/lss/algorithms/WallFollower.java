@@ -47,8 +47,7 @@ public class WallFollower extends BasicMovements implements Robot {
 				turnLeft();
 			else if (maze.getMazeComponent(currentPoint.x, currentPoint.y + 1)
 					.isWall()) {
-				turnLeft();
-				turnLeft();
+				turnBack();
 			}
 		}
 
@@ -66,8 +65,7 @@ public class WallFollower extends BasicMovements implements Robot {
 				turnLeft();
 			else if (maze.getMazeComponent(currentPoint.x - 1, currentPoint.y)
 					.isWall()) {
-				turnLeft();
-				turnLeft();
+				turnBack();
 			}
 		}
 
@@ -85,8 +83,7 @@ public class WallFollower extends BasicMovements implements Robot {
 				turnLeft();
 			else if (maze.getMazeComponent(currentPoint.x, currentPoint.y - 1)
 					.isWall()) {
-				turnLeft();
-				turnLeft();
+				turnBack();
 			}
 		}
 
@@ -104,8 +101,7 @@ public class WallFollower extends BasicMovements implements Robot {
 				turnLeft();
 			else if (maze.getMazeComponent(currentPoint.x + 1, currentPoint.y)
 					.isWall()) {
-				turnLeft();
-				turnLeft();
+				turnBack();
 			}
 		}
 	}
